@@ -1,14 +1,16 @@
-import React from "react";
+import Avatar from "../Avatar";
+import Flex from "../Flex";
+import Container from "../Container";
+import Link from "next/link";
 
-export default function Sidebar() {
+export default function Index() {
   return (
     <div className="w-1/4 border-r border-grey-400 fixed overflow-y-auto top-0 left-0 h-screen z-30 bg-white">
-      <div className="container px-8 py-24">
-        {/* <div className="h-24"></div> */}
-        <div className="flex justify-start items-center space-x-4 rounded-xl bg-grey-200 p-4">
-          <div className="h-10 w-10 rounded-full overflow-x-hidden bg-red-400">
+      <Container className="px-8 py-24">
+        <Flex className="flex-row justify-start items-center space-x-4 rounded-xl bg-grey-200 p-4">
+          <Avatar className="h-10 w-10 rounded-full bg-red-400">
             <img src="" alt="" />
-          </div>
+          </Avatar>
           <div className="space-y-1">
             <h4 className="text-textColor-primary-light text-sm font-semibold">
               Nila Dwi Sanja
@@ -17,34 +19,38 @@ export default function Sidebar() {
               siswa
             </h5>
           </div>
-        </div>
+        </Flex>
         <div className="h-10"></div>
-        <div className="flex flex-col space-y-4 text-textColor-secondary-light font-semibold">
+        <Flex className="flex-col space-y-4 text-textColor-secondary-light font-semibold">
           <div>Dashboard</div>
-          <div className="flex flex-col">
+          <Flex className="flex-col">
             <ul className="list-disc list-inside space-y-3">
               <li>Dashboard</li>
               <li>Analisa</li>
               <li>E-Raport</li>
             </ul>
-          </div>
-        </div>
+          </Flex>
+        </Flex>
         <div className="h-10"></div>
-        <div className="flex flex-col space-y-4 text-textColor-secondary-light font-semibold">
+        <Flex className="flex-col space-y-4 text-textColor-secondary-light font-semibold">
           <div>Users</div>
-          <div className="flex flex-col">
+          <Flex className="flex-col">
             <ul className="list-disc list-inside space-y-3">
-              <li>Profil</li>
+              <Link href="/profile">
+                <a>
+                  <li>Profil</li>
+                </a>
+              </Link>
               <li>Akun</li>
               <li>Kalender</li>
               <li>Catatan</li>
             </ul>
-          </div>
-        </div>
+          </Flex>
+        </Flex>
         <div className="h-10"></div>
-        <div className="flex flex-col space-y-4 text-textColor-secondary-light font-semibold">
+        <Flex className="flex-col space-y-4 text-textColor-secondary-light font-semibold">
           <div>Sekolah</div>
-          <div className="flex flex-col">
+          <Flex className="flex-col">
             <ul className="list-disc list-inside space-y-3">
               <li>Kelas</li>
               <li>Pelajaran</li>
@@ -54,20 +60,20 @@ export default function Sidebar() {
               <li>Ekstrakurikuler</li>
               <li>Perpustakaan</li>
             </ul>
-          </div>
-        </div>
+          </Flex>
+        </Flex>
         <div className="h-10"></div>
-        <div className="flex flex-col space-y-4 text-textColor-secondary-light font-semibold">
+        <Flex className="flex-col space-y-4 text-textColor-secondary-light font-semibold">
           <div>Blog</div>
-          <div className="flex flex-col">
+          <Flex className="flex-col">
             <ul className="list-disc list-inside space-y-3">
               <li>Membuat Post</li>
               <li>Daftar Post</li>
               <li>Media</li>
             </ul>
-          </div>
-        </div>
-      </div>
+          </Flex>
+        </Flex>
+      </Container>
     </div>
   );
 }

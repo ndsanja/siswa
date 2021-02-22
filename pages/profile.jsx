@@ -1,6 +1,6 @@
 import MainContent from "../components/MainContent";
 import Navbar from "../components/Navbar";
-import Profile from "../components/Profile/Profile";
+import Profile from "../components/Users/Profile";
 import Sidebar from "../components/Sidebar";
 
 export default function profile() {

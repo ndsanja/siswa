@@ -1,4 +1,4 @@
-export default function Card(props) {
+export default function Box(props) {
   return (
     <div className={`${props.className && props.className}`}>
       {props.children}

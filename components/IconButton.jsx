@@ -1,4 +1,4 @@
-export default function Button(props) {
+export default function IconButton(props) {
   return (
     <button
       onClick={props.onClick && props.onClick}
