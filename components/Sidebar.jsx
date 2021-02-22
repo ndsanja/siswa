@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Sidebar() {
   return (
-    <div className="w-1/4 border-r border-grey-400 fixed overflow-y-auto top-0 left-0 h-screen z-30">
+    <div className="w-1/4 border-r border-grey-400 fixed overflow-y-auto top-0 left-0 h-screen z-30 bg-white">
       <div className="container px-8 py-24">
         {/* <div className="h-24"></div> */}
         <div className="flex justify-start items-center space-x-4 rounded-xl bg-grey-200 p-4">
