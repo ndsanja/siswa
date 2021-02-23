@@ -25,7 +25,11 @@ export default function Index() {
           <div>Dashboard</div>
           <Flex className="flex-col">
             <ul className="list-disc list-inside space-y-3">
-              <li>Dashboard</li>
+              <Link href="/">
+                <a>
+                  <li>Dashboard</li>
+                </a>
+              </Link>
               <li>Analisa</li>
               <li>E-Raport</li>
             </ul>
@@ -52,7 +56,11 @@ export default function Index() {
           <div>Sekolah</div>
           <Flex className="flex-col">
             <ul className="list-disc list-inside space-y-3">
-              <li>Kelas</li>
+              <Link href="/sekolah/kelas">
+                <a>
+                  <li>Kelas</li>
+                </a>
+              </Link>
               <li>Pelajaran</li>
               <li>Kelompok Belajar</li>
               <li>Learning Path</li>

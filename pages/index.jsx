@@ -1,14 +1,10 @@
 import Card from "../components/Card";
 import MainContent from "../components/MainContent";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
 import Grid from "../components/Grid";
 
 export default function index() {
   return (
     <div className="bg-white">
-      <Navbar />
-      <Sidebar />
       <MainContent>
         <Grid className="grid-cols-12 gap-6">
           <Card className="rounded-xl bg-gradient-to-br from-primary-light to-primary-main shadow-z12-light-shadow h-60 col-span-8"></Card>

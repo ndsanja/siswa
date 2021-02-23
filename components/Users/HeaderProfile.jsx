@@ -23,13 +23,13 @@ export default function HeaderProfile() {
           <div>.</div>
           <Link href="#">
             <a>
-              <Breadcrumbs>Management</Breadcrumbs>
+              <Breadcrumbs>Siswa</Breadcrumbs>
             </a>
           </Link>
           <div>.</div>
           <Link href="#">
             <a>
-              <Breadcrumbs>User</Breadcrumbs>
+              <Breadcrumbs>Profil</Breadcrumbs>
             </a>
           </Link>
           <div>.</div>
