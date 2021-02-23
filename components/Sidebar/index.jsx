@@ -56,14 +56,16 @@ export default function Index() {
           <div>Sekolah</div>
           <Flex className="flex-col">
             <ul className="list-disc list-inside space-y-3">
-              <Link href="/sekolah/kelas">
-                <a>
-                  <li>Kelas</li>
-                </a>
-              </Link>
-              <li>Pelajaran</li>
-              <li>Kelompok Belajar</li>
-              <li>Learning Path</li>
+              <li>
+                <Link href="/sekolah/kelas">
+                  <a>Kelas</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/sekolah/pelajaran">
+                  <a>Pelajaran</a>
+                </Link>
+              </li>
               <li>Laboratorium</li>
               <li>Ekstrakurikuler</li>
               <li>Perpustakaan</li>

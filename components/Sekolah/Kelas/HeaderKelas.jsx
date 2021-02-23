@@ -1,8 +1,8 @@
-import Breadcrumbs from "../Breadcrumbs";
-import Flex from "../Flex";
+import Breadcrumbs from "../../Breadcrumbs";
+import Flex from "../../Flex";
 import Link from "next/link";
-import Tab from "../Tab";
-import Tabs from "../Tabs";
+import Tab from "../../Tab";
+import Tabs from "../../Tabs";
 
 export default function HeaderKelas() {
   return (
@@ -46,6 +46,7 @@ export default function HeaderKelas() {
           Kelas Saya
         </Tab>
         <Tab>Jadwal</Tab>
+        <Tab>Kelompok Belajar</Tab>
       </Tabs>
     </>
   );

@@ -1,8 +1,8 @@
-import Grid from "../Grid";
+import Grid from "../../Grid";
 import CardKelas from "./CardKelas";
 import HeaderKelas from "./HeaderKelas";
 
-export default function Kelas() {
+export default function Index() {
   return (
     <div>
       <HeaderKelas />
