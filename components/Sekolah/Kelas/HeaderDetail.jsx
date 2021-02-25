@@ -4,7 +4,7 @@ import Link from "next/link";
 import Tab from "../../Tab";
 import Tabs from "../../Tabs";
 
-export default function HeaderKelas() {
+export default function DetailHeader() {
   return (
     <>
       <Flex className="flex-col space-y-4">
@@ -18,10 +18,20 @@ export default function HeaderKelas() {
             </a>
           </Link>
           <div>.</div>
-          <Breadcrumbs>Sekolah</Breadcrumbs>
+          <Link href="#">
+            <a>
+              <Breadcrumbs>Sekolah</Breadcrumbs>
+            </a>
+          </Link>
+          <div>.</div>
+          <Link href="/sekolah/kelas">
+            <a>
+              <Breadcrumbs>Kelas</Breadcrumbs>
+            </a>
+          </Link>
           <div>.</div>
           <Breadcrumbs className="text-textColor-secondary-light">
-            Kelas
+            XII-IPS 3
           </Breadcrumbs>
         </Flex>
       </Flex>
@@ -29,15 +39,14 @@ export default function HeaderKelas() {
 
       <Tabs className="flex-row items-center justify-start space-x-12 bottom-0 right-0 z-10 leading-10 font-semibold text-textColor-secondary-light overflow-x-auto">
         <Tab className="border-b-2 border-primary-main text-textColor-primary-light">
-          Kelas Saya
+          Dashboard
         </Tab>
         <Tab>Jadwal</Tab>
-        <Tab>Kelompok Belajar</Tab>
-        <Link href="https://sekolah-gamma.vercel.app/kursus">
-          <a>
-            <Tab>E-learning</Tab>
-          </a>
-        </Link>
+        <Tab>Tugas</Tab>
+        <Tab>Pelajaran</Tab>
+        <Tab>Siswa</Tab>
+        <Tab>Guru</Tab>
+        <Tab>Info</Tab>
       </Tabs>
     </>
   );

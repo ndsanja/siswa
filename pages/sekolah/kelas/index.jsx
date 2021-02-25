@@ -1,5 +1,5 @@
-import Kelas from "../../components/Sekolah/Kelas";
-import MainContent from "../../components/MainContent";
+import Kelas from "../../../components/Sekolah/Kelas";
+import MainContent from "../../../components/MainContent";
 
 export default function kelas() {
   return (

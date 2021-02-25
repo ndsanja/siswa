@@ -41,9 +41,7 @@ export default function HeaderPejaran() {
         </Tab>
         <Tab>Learning Path</Tab>
         <Tab>
-          <a href="https://sekolah-gamma.vercel.app/kursus" target="_blank">
-            E-Learning
-          </a>
+          <a href="https://sekolah-gamma.vercel.app/kursus">E-Learning</a>
         </Tab>
       </Tabs>
     </>

@@ -22,11 +22,7 @@ export default function HeaderDetail() {
             </a>
           </Link>
           <div>.</div>
-          <Link href="#">
-            <a>
-              <Breadcrumbs>Sekolah</Breadcrumbs>
-            </a>
-          </Link>
+          <Breadcrumbs>Sekolah</Breadcrumbs>
           <div>.</div>
           <Link href="/sekolah/pelajaran">
             <a>
@@ -34,13 +30,9 @@ export default function HeaderDetail() {
             </a>
           </Link>
           <div>.</div>
-          <Link href="#">
-            <a>
-              <Breadcrumbs className="text-textColor-secondary-light">
-                Sosiologi
-              </Breadcrumbs>
-            </a>
-          </Link>
+          <Breadcrumbs className="text-textColor-secondary-light">
+            Sosiologi
+          </Breadcrumbs>
         </Flex>
       </Flex>
       <div className="h-8"></div>
@@ -63,7 +55,6 @@ export default function HeaderDetail() {
                 <a
                   className="bg-primary-main px-8 font-semibold text-textColor-primary-dark rounded-lg flex items-center justify-center"
                   href="https://sekolah-gamma.vercel.app/dashboard"
-                  target="_blank"
                 >
                   Mulai Belajar
                 </a>
