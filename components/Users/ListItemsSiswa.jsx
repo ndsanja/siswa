@@ -7,12 +7,12 @@ import Avatar from "../Avatar";
 
 export default function ListItemsSiswa(props) {
   return (
-    <Grid className="grid-cols-12 hover:bg-grey-200 rounded-xl py-4 px-2 items-center inline-grid font-semibold">
+    <Grid className="grid-cols-12 rounded-xl py-4 px-2 items-center inline-grid font-semibold hover:bg-grey-200">
       <div className="col-span-1 rounded-full flex items-center justify-center">
         <input type="checkbox" name="" id="" className="focus:outline-none" />
       </div>
-      <Flex className="col-span-4 items-center space-x-2">
-        <Avatar className="h-8 w-8 bg-info-main rounded-full">
+      <Flex className="col-span-4 items-center space-x-4">
+        <Avatar className="h-10 w-10 bg-info-main rounded-full">
           <img src="" alt="" />
         </Avatar>
         <h2>{props.nama}</h2>
