@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Tab(props) {
   return (
-    <div className={`cursor-pointer ${props.className && props.className}`}>
+    <div
+      onClick={props.onClick && props.onClick}
+      className={`cursor-pointer ${props.className && props.className}`}
+    >
       {props.children}
     </div>
   );
