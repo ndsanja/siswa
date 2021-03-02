@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Index() {
   return (
     <div className="w-1/4 border-r border-grey-400 fixed overflow-y-auto top-0 left-0 h-screen z-30 bg-white">
-      <Container className="px-8 py-24">
+      <Container className="px-10 py-24">
         <Flex className="flex-row justify-start items-center space-x-4 rounded-xl bg-grey-200 p-4">
           <Avatar className="h-10 w-10 rounded-full bg-red-400">
             <img src="" alt="" />
@@ -31,7 +31,6 @@ export default function Index() {
                 </a>
               </Link>
               <li>Analisa</li>
-              <li>E-Raport</li>
             </ul>
           </Flex>
         </Flex>

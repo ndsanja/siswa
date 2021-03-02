@@ -70,16 +70,6 @@ export default function HeaderDetail(props) {
           </Flex>
           <Tabs className="flex-row items-center justify-end space-x-12 absolute bottom-0 right-0 z-10 px-6 leading-10 font-semibold text-textColor-secondary-light">
             <Tab
-              onClick={props.openSilabus}
-              className={`${
-                props.openTab == "silabus"
-                  ? `border-b-2 border-primary-main text-textColor-primary-light`
-                  : ``
-              }`}
-            >
-              Silabus
-            </Tab>
-            <Tab
               onClick={props.openTimeline}
               className={`${
                 props.openTab == "timeline"
@@ -88,6 +78,16 @@ export default function HeaderDetail(props) {
               }`}
             >
               Timeline
+            </Tab>
+            <Tab
+              onClick={props.openSilabus}
+              className={`${
+                props.openTab == "silabus"
+                  ? `border-b-2 border-primary-main text-textColor-primary-light`
+                  : ``
+              }`}
+            >
+              Silabus
             </Tab>
             <Tab>Latihan</Tab>
             <Tab>Deskripsi</Tab>

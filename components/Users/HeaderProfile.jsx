@@ -62,8 +62,9 @@ export default function HeaderProfile() {
             <Tab className="border-b-2 border-primary-main text-textColor-primary-light">
               Profile
             </Tab>
-            <Tab>Info</Tab>
+            <Tab>Akademik</Tab>
             <Tab>Kesiswaan</Tab>
+            <Tab>E-Raport</Tab>
             <Tab>Administrasi</Tab>
           </Tabs>
           <div className="bg-white absolute bottom-0 w-full h-12"></div>

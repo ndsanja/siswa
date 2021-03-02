@@ -4,7 +4,7 @@ import Container from "../../Container";
 import Flex from "../../Flex";
 
 export default function CardTimeline() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const toogleOpen = () => {
     setOpen(!open);
   };
