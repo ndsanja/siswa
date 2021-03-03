@@ -21,7 +21,7 @@ export default function ListItemsSiswa(props) {
         <p className="font-normal">{props.jam}</p>
       </Flex>
       <h2 className="col-span-1">{props.bobot}</h2>
-      <h2 className="col-span-1">{props.level}</h2>
+      <h2 className="col-span-1">{props.nilai}</h2>
     </Grid>
   );
 }

@@ -22,7 +22,7 @@ export default function CardLatihan(props) {
               <h2 className="col-span-2">Status</h2>
               <h2 className="col-span-2">Deadline</h2>
               <h2 className="col-span-1">Bobot</h2>
-              <h2 className="col-span-1">Level</h2>
+              <h2 className="col-span-1">Nilai</h2>
             </Grid>
             {props.children}
           </Flex>

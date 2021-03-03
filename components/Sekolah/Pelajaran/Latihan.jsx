@@ -29,7 +29,7 @@ export default function Silabus(props) {
           deadline="17 Feb"
           jam="20.00 WIB"
           bobot="2%"
-          level="menengah"
+          nilai="73 / B-"
         />
         <ListItemsLatihan
           nama="Pelajaran 1"
@@ -38,7 +38,7 @@ export default function Silabus(props) {
           deadline="17 Feb"
           jam="20.00 WIB"
           bobot="2%"
-          level="menengah"
+          nilai="73 / B-"
         />
         <ListItemsLatihan
           nama="Pelajaran 1"
@@ -47,7 +47,7 @@ export default function Silabus(props) {
           deadline="17 Feb"
           jam="20.00 WIB"
           bobot="2%"
-          level="menengah"
+          nilai="73 / B-"
         />
         <ListItemsLatihan
           nama="Pelajaran 1"
@@ -56,7 +56,7 @@ export default function Silabus(props) {
           deadline="17 Feb"
           jam="20.00 WIB"
           bobot="2%"
-          level="menengah"
+          nilai="73 / B-"
         />
         <ListItemsLatihan
           nama="Pelajaran 1"
@@ -65,7 +65,25 @@ export default function Silabus(props) {
           deadline="17 Feb"
           jam="20.00 WIB"
           bobot="2%"
-          level="menengah"
+          nilai="73 / B-"
+        />
+        <ListItemsLatihan
+          nama="Pelajaran 1"
+          deskripsi="Kuis"
+          status="Terkumpul"
+          deadline="17 Feb"
+          jam="20.00 WIB"
+          bobot="2%"
+          nilai="73 / B-"
+        />
+        <ListItemsLatihan
+          nama="Pelajaran 1"
+          deskripsi="Kuis"
+          status="Terkumpul"
+          deadline="17 Feb"
+          jam="20.00 WIB"
+          bobot="2%"
+          nilai="73 / B-"
         />
       </ListLatihan>
     </TabPanel>
