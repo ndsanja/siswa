@@ -2,6 +2,7 @@ import { useState } from "react";
 import Card from "../../Card";
 import Container from "../../Container";
 import Flex from "../../Flex";
+import Grid from "../../Grid";
 
 export default function CardTimeline() {
   const [open, setOpen] = useState(true);
@@ -25,84 +26,48 @@ export default function CardTimeline() {
         >
           <Flex className="flex-col pt-8">
             <h1 className="text-2xl font-medium px-6">Introduction</h1>
-            <div className="pl-4 text-base py-4 cursor-pointer hover:bg-grey-300">
-              <Container className="space-x-2 z-10 px-6">
-                <span>#</span>
-                <span className="font-semibold">Video:</span>
-                <span className="font-normal">Judul Video</span>
-                <span className="font-normal text-xs">6 Menit</span>
-              </Container>
-            </div>
-            <div className="pl-4 text-base py-4 cursor-pointer hover:bg-grey-300">
-              <Container className="space-x-2 z-10 px-6">
-                <span>#</span>
-                <span className="font-semibold">Video:</span>
-                <span className="font-normal">Judul Video</span>
-                <span className="font-normal text-xs">6 Menit</span>
-              </Container>
-            </div>
-            <div className="pl-4 text-base py-4 cursor-pointer hover:bg-grey-300">
-              <Container className="space-x-2 z-10 px-6">
-                <span>#</span>
-                <span className="font-semibold">Video:</span>
-                <span className="font-normal">Judul Video</span>
-                <span className="font-normal text-xs">6 Menit</span>
-              </Container>
-            </div>
-          </Flex>
-          <Flex className="flex-col pt-8">
-            <h1 className="text-2xl font-medium px-6">Introduction</h1>
-            <div className="pl-4 text-base py-4 cursor-pointer hover:bg-grey-300">
-              <Container className="space-x-2 z-10 px-6">
-                <span>#</span>
-                <span className="font-semibold">Video:</span>
-                <span className="font-normal">Judul Video</span>
-                <span className="font-normal text-xs">6 Menit</span>
-              </Container>
-            </div>
-            <div className="pl-4 text-base py-4 cursor-pointer hover:bg-grey-300">
-              <Container className="space-x-2 z-10 px-6">
-                <span>#</span>
-                <span className="font-semibold">Video:</span>
-                <span className="font-normal">Judul Video</span>
-                <span className="font-normal text-xs">6 Menit</span>
-              </Container>
-            </div>
-            <div className="pl-4 text-base py-4 cursor-pointer hover:bg-grey-300">
-              <Container className="space-x-2 z-10 px-6">
-                <span>#</span>
-                <span className="font-semibold">Video:</span>
-                <span className="font-normal">Judul Video</span>
-                <span className="font-normal text-xs">6 Menit</span>
-              </Container>
-            </div>
-          </Flex>
-          <Flex className="flex-col pt-8">
-            <h1 className="text-2xl font-medium px-6">Introduction</h1>
-            <div className="pl-4 text-base py-4 cursor-pointer hover:bg-grey-300">
-              <Container className="space-x-2 z-10 px-6">
-                <span>#</span>
-                <span className="font-semibold">Video:</span>
-                <span className="font-normal">Judul Video</span>
-                <span className="font-normal text-xs">6 Menit</span>
-              </Container>
-            </div>
-            <div className="pl-4 text-base py-4 cursor-pointer hover:bg-grey-300">
-              <Container className="space-x-2 z-10 px-6">
-                <span>#</span>
-                <span className="font-semibold">Video:</span>
-                <span className="font-normal">Judul Video</span>
-                <span className="font-normal text-xs">6 Menit</span>
-              </Container>
-            </div>
-            <div className="pl-4 text-base py-4 cursor-pointer hover:bg-grey-300">
-              <Container className="space-x-2 z-10 px-6">
-                <span>#</span>
-                <span className="font-semibold">Video:</span>
-                <span className="font-normal">Judul Video</span>
-                <span className="font-normal text-xs">6 Menit</span>
-              </Container>
-            </div>
+            <Flex className="flex-row py-4 divide-x divide-textColor-secondary-light">
+              <Flex className="w-5/12 flex-col items-end px-6 mt-6">
+                <div className="space-x-4 hover:bg-grey-300 p-4 cursor-pointer w-full text-right">
+                  <span className="font-normal">Videos</span>
+                  <span>#</span>
+                  <span>waktu 42 menit</span>
+                </div>
+                <div className="space-x-4 hover:bg-grey-300 p-4 cursor-pointer w-full text-right">
+                  <span className="font-normal">Reading</span>
+                  <span>#</span>
+                  <span>waktu 42 menit</span>
+                </div>
+                <div className="space-x-4 hover:bg-grey-300 p-4 cursor-pointer w-full text-right">
+                  <span className="font-normal">Kelas</span>
+                  <span>#</span>
+                  <span>waktu 42 menit</span>
+                </div>
+              </Flex>
+              <Flex className="flex-col w-7/12 px-6 space-y-4">
+                <Flex className="flex-row justify-between">
+                  <Flex className="flex-col flex-1">
+                    <div>Judul</div>
+                  </Flex>
+                  <Flex className="flex-row justify-start">
+                    <div>Deadline</div>
+                  </Flex>
+                </Flex>
+                <Flex className="flex-row justify-between hover:bg-grey-300 cursor-pointer p-1">
+                  <Flex className="flex-col flex-1 space-y-2">
+                    <div className="text-base">Kuis</div>
+                    <div className="font-normal">
+                      Lorem ipsum, dolor sit amet consectetur adipisicin
+                    </div>
+                    <div className="text-base">30 menit</div>
+                  </Flex>
+                  <Flex className="flex-col space-y-1 font-medium">
+                    <div>7 Feb</div>
+                    <div>20.00 WIB</div>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
           </Flex>
         </Flex>
       </Flex>

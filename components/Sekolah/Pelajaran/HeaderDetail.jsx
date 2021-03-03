@@ -89,7 +89,16 @@ export default function HeaderDetail(props) {
             >
               Silabus
             </Tab>
-            <Tab>Latihan</Tab>
+            <Tab
+              onClick={props.openLatihan}
+              className={`${
+                props.openTab == "latihan"
+                  ? `border-b-2 border-primary-main text-textColor-primary-light`
+                  : ``
+              }`}
+            >
+              Latihan
+            </Tab>
             <Tab>Deskripsi</Tab>
           </Tabs>
           <div className="bg-white absolute bottom-0 w-full h-12"></div>
