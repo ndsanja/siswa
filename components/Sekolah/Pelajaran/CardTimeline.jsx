@@ -27,25 +27,25 @@ export default function CardTimeline() {
           <Flex className="flex-col pt-8">
             <h1 className="text-2xl font-medium px-6">Introduction</h1>
             <Flex className="flex-row py-4 divide-x divide-textColor-secondary-light">
-              <Flex className="w-5/12 flex-col items-end px-6 mt-6">
-                <div className="space-x-4 hover:bg-grey-300 p-4 cursor-pointer w-full text-right">
+              <Flex className="w-5/12 flex-col items-end px-6 mt-4">
+                <div className="space-x-4 hover:bg-grey-200 p-4 cursor-pointer rounded-lg w-full text-right">
                   <span className="font-normal">Videos</span>
                   <span>#</span>
                   <span>waktu 42 menit</span>
                 </div>
-                <div className="space-x-4 hover:bg-grey-300 p-4 cursor-pointer w-full text-right">
+                <div className="space-x-4 hover:bg-grey-200 p-4 cursor-pointer rounded-lg w-full text-right">
                   <span className="font-normal">Reading</span>
                   <span>#</span>
                   <span>waktu 42 menit</span>
                 </div>
-                <div className="space-x-4 hover:bg-grey-300 p-4 cursor-pointer w-full text-right">
+                <div className="space-x-4 hover:bg-grey-200 p-4 cursor-pointer rounded-lg w-full text-right">
                   <span className="font-normal">Kelas</span>
                   <span>#</span>
                   <span>waktu 42 menit</span>
                 </div>
               </Flex>
               <Flex className="flex-col w-7/12 px-6 space-y-4">
-                <Flex className="flex-row justify-between">
+                <Flex className="flex-row justify-between bg-grey-200 rounded-lg p-2">
                   <Flex className="flex-col flex-1">
                     <div>Judul</div>
                   </Flex>
@@ -53,7 +53,7 @@ export default function CardTimeline() {
                     <div>Deadline</div>
                   </Flex>
                 </Flex>
-                <Flex className="flex-row justify-between hover:bg-grey-300 cursor-pointer p-1">
+                <Flex className="flex-row justify-between hover:bg-grey-200 rounded-lg cursor-pointer p-2">
                   <Flex className="flex-col flex-1 space-y-2">
                     <div className="text-base">Kuis</div>
                     <div className="font-normal">

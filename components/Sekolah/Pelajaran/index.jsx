@@ -1,13 +1,14 @@
 import Grid from "../../Grid";
+import TabPanel from "../../TabPanel";
 import CardPelajaran from "./CardPelajaran";
-import HeaderPelajaran from "./HeaderPelajaran";
 
-export default function Index() {
+export default function Index(props) {
   return (
-    <div>
-      <HeaderPelajaran />
+    <TabPanel
+      className={`${props.openTab == "pelajaran" ? "block" : "hidden"}`}
+    >
       <div className="h-8"></div>
-      <Grid className="grid-cols-12 gap-6">
+      <Grid className={`grid-cols-12 gap-6`}>
         <CardPelajaran />
         <CardPelajaran />
         <CardPelajaran />
@@ -26,6 +27,6 @@ export default function Index() {
         <CardPelajaran />
         <CardPelajaran />
       </Grid>
-    </div>
+    </TabPanel>
   );
 }
