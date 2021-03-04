@@ -26,9 +26,15 @@ export default function HeaderPejaran(props) {
           <div>.</div>
           <Link href="#">
             <a>
-              <Breadcrumbs className="text-textColor-secondary-light">
-                Pelajaran
-              </Breadcrumbs>
+              {props.openTab == "pelajaran" ? (
+                <Breadcrumbs className="text-textColor-secondary-light">
+                  Pelajaran
+                </Breadcrumbs>
+              ) : (
+                <Breadcrumbs className="text-textColor-secondary-light">
+                  Learning-Path
+                </Breadcrumbs>
+              )}
             </a>
           </Link>
         </Flex>

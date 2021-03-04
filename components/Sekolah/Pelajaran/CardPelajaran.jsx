@@ -7,7 +7,7 @@ import IconButton from "../../IconButton";
 export default function CardPelajaran() {
   return (
     <Card className="col-span-4 bg-white shadow-z12-light-shadow rounded-xl overflow-hidden">
-      <Link href="pelajaran/1">
+      <Link href="/sekolah/pelajaran/1">
         <a>
           <div className="w-full h-36 bg-info-main">
             <img src="" alt="" />
