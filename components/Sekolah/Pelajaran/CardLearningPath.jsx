@@ -3,12 +3,12 @@ import Container from "../../Container";
 import Avatar from "../../Avatar";
 import Flex from "../../Flex";
 import Link from "next/link";
-import IconButton from "../../IconButton";
+import Grid from "../../Grid";
 
 export default function CardLearningPath() {
   return (
     <Card className="col-span-4 bg-white shadow-z12-light-shadow rounded-xl overflow-hidden">
-      <Link href="pelajaran/learning-path/1">
+      <Link href="/sekolah/learning-path/1">
         <a>
           <div className="w-full h-28 relative">
             <div className="bg-primary-main transform -skew-y-12 absolute w-full -top-8 -bottom-8">
@@ -19,17 +19,25 @@ export default function CardLearningPath() {
             </Avatar>
           </div>
           <Container className="bg-info-dark">
-            <Container className="px-4 h-60">
+            <Container className="px-4 h-72">
               <Flex className="flex-col py-24 space-y-8 font-semibold text-textColor-primary-dark text-sm">
                 <h1 className="text-textColor-primary-dark text-xl">
                   UTBK Ilmu Pengetahuan Sosial
                 </h1>
-                <Flex className="font-medium tracking-wider flex-wrap justify-center space-x-2">
-                  <span className="">Ekonomi</span>
-                  <span className="">Sosiologi</span>
-                  <span className="">Sejarah</span>
-                  <span className="">Geografi</span>
-                </Flex>
+                <Grid className="font-medium text-xs grid-cols-3 gap-2">
+                  <span className="px-4 py-2 rounded-full border border-white text-center">
+                    Ekonomi
+                  </span>
+                  <span className="px-4 py-2 rounded-full border border-white text-center">
+                    Sosiologi
+                  </span>
+                  <span className="px-4 py-2 rounded-full border border-white text-center">
+                    Sejarah
+                  </span>
+                  <span className="px-4 py-2 rounded-full border border-white text-center">
+                    Geografi
+                  </span>
+                </Grid>
               </Flex>
             </Container>
             <Container className="border-t">

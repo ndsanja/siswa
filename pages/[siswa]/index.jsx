@@ -1,5 +1,5 @@
-import MainContent from "../components/MainContent";
-import Profile from "../components/Users/Profile";
+import MainContent from "../../components/MainContent";
+import Profile from "../../components/Users/Profile";
 
 export default function profile() {
   return (

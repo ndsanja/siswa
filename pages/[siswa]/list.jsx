@@ -1,6 +1,6 @@
-import MainContent from "../components/MainContent";
-import ListSiswa from "../components/Users/ListSiswa";
-import ListItemsSiswa from "../components/Users/ListItemsSiswa";
+import MainContent from "../../components/MainContent";
+import ListSiswa from "../../components/Users/ListSiswa";
+import ListItemsSiswa from "../../components/Users/ListItemsSiswa";
 
 export default function list() {
   return (

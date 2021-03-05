@@ -1,10 +1,10 @@
-import MainContent from "../../../../components/MainContent";
-import Silabus from "../../../../components/Sekolah/Pelajaran/Silabus";
-import Timeline from "../../../../components/Sekolah/Pelajaran/Timeline";
-import Latihan from "../../../../components/Sekolah/Pelajaran/Latihan";
-import PathPelajaran from "../../../../components/Sekolah/Pelajaran/PathPelajaran";
+import MainContent from "../../../components/MainContent";
+import Silabus from "../../../components/Sekolah/Pelajaran/Silabus";
+import Timeline from "../../../components/Sekolah/Pelajaran/Timeline";
+import Latihan from "../../../components/Sekolah/Pelajaran/Latihan";
+import PathPelajaran from "../../../components/Sekolah/Pelajaran/PathPelajaran";
 import { useState } from "react";
-import HeaderDetailLearningPath from "../../../../components/Sekolah/Pelajaran/HeaderDetailLearningPath";
+import HeaderDetailLearningPath from "../../../components/Sekolah/Pelajaran/HeaderDetailLearningPath";
 
 export default function id_learningPath() {
   const [openTab, setOpenTab] = useState("pelajaran");

@@ -15,15 +15,19 @@ export default function HeaderDetailLearningPath(props) {
           UTBK Ilmu Pengetahuan Sosial
         </h1>
         <Flex className="flex-row text-textColor-primary-light text-sm space-x-4 font-semibold">
-          <Link href="/">
+          <Link href="/12345">
             <a>
-              <Breadcrumbs>Dashboard</Breadcrumbs>
+              <Breadcrumbs>Nila Dwi Sanja</Breadcrumbs>
             </a>
           </Link>
           <div>.</div>
-          <Breadcrumbs>Sekolah</Breadcrumbs>
+          <Link href="/sekolah/learning-path">
+            <a>
+              <Breadcrumbs>Sekolah</Breadcrumbs>
+            </a>
+          </Link>
           <div>.</div>
-          <Link href="/sekolah/pelajaran">
+          <Link href="/sekolah/learning-path">
             <a>
               <Breadcrumbs>learning-Path</Breadcrumbs>
             </a>

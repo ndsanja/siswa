@@ -15,31 +15,22 @@ export default function HeaderProfile() {
           Profile
         </h1>
         <Flex className="flex-row text-textColor-primary-light text-sm space-x-4 font-semibold">
-          <Link href="/">
-            <a>
-              <Breadcrumbs>Dashboard</Breadcrumbs>
-            </a>
-          </Link>
-          <div>.</div>
-          <Link href="#">
+          <Link href="/1234">
             <a>
               <Breadcrumbs>Siswa</Breadcrumbs>
             </a>
           </Link>
           <div>.</div>
-          <Link href="#">
+          <Link href="/1234">
             <a>
-              <Breadcrumbs>Profil</Breadcrumbs>
+              <Breadcrumbs>Profile</Breadcrumbs>
             </a>
           </Link>
           <div>.</div>
-          <Link href="#">
-            <a>
-              <Breadcrumbs className="text-textColor-secondary-light">
-                Nila Dwi Sanja
-              </Breadcrumbs>
-            </a>
-          </Link>
+
+          <Breadcrumbs className="text-textColor-secondary-light">
+            Nila Dwi Sanja
+          </Breadcrumbs>
         </Flex>
       </Flex>
       <div className="h-8"></div>

@@ -12,13 +12,17 @@ export default function HeaderKelas() {
           Kelas
         </h1>
         <Flex className="flex-row text-textColor-primary-light text-sm space-x-4 font-semibold">
-          <Link href="/">
+          <Link href="/12345">
             <a>
-              <Breadcrumbs>Dashboard</Breadcrumbs>
+              <Breadcrumbs>Nila Dwi Sanja</Breadcrumbs>
             </a>
           </Link>
           <div>.</div>
-          <Breadcrumbs>Sekolah</Breadcrumbs>
+          <Link href="/sekolah/kelas">
+            <a>
+              <Breadcrumbs>Sekolah</Breadcrumbs>
+            </a>
+          </Link>
           <div>.</div>
           <Breadcrumbs className="text-textColor-secondary-light">
             Kelas

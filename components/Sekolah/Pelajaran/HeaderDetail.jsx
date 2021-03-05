@@ -15,19 +15,29 @@ export default function HeaderDetail(props) {
           Sosiologi
         </h1>
         <Flex className="flex-row text-textColor-primary-light text-sm space-x-4 font-semibold">
-          <Link href="/">
+          <Link href="/12345">
             <a>
-              <Breadcrumbs>Dashboard</Breadcrumbs>
+              <Breadcrumbs>Nila Dwi Sanja</Breadcrumbs>
             </a>
           </Link>
           <div>.</div>
-          <Breadcrumbs>Sekolah</Breadcrumbs>
+          <Link href="/sekolah/kelas/1/pelajaran">
+            <a>
+              <Breadcrumbs>XII-IPS 3</Breadcrumbs>
+            </a>
+          </Link>
           <div>.</div>
           <Link href="/sekolah/pelajaran">
             <a>
               <Breadcrumbs>Pelajaran</Breadcrumbs>
             </a>
           </Link>
+          {/* <div>.</div>
+          <Link href="/sekolah/learning-path/1">
+            <a>
+              <Breadcrumbs>Learning-Path</Breadcrumbs>
+            </a>
+          </Link> */}
           <div>.</div>
           <Breadcrumbs className="text-textColor-secondary-light">
             Sosiologi

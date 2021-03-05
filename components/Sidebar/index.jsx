@@ -20,8 +20,8 @@ export default function Index() {
             </h5>
           </div>
         </Flex>
-        <div className="h-10"></div>
-        <Flex className="flex-col space-y-4 text-textColor-secondary-light font-semibold">
+        <div className="h-4" />
+        {/* <Flex className="flex-col space-y-4 text-textColor-secondary-light font-semibold">
           <div>Dashboard</div>
           <Flex className="flex-col">
             <ul className="list-disc list-inside space-y-3">
@@ -33,10 +33,10 @@ export default function Index() {
               <li>Analisa</li>
             </ul>
           </Flex>
-        </Flex>
+        </Flex> */}
         <div className="h-10"></div>
         <Flex className="flex-col space-y-4 text-textColor-secondary-light font-semibold">
-          <div>Users</div>
+          <div>Siswa</div>
           <Flex className="flex-col">
             <ul className="list-disc list-inside space-y-3">
               <Link href="/profile">
