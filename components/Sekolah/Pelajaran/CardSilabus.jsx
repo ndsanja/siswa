@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Card from "../../Card";
-import Flex from "../../Flex";
-import Container from "../../Container";
+import Card from "../../Atom/Card";
+import Flex from "../../Atom/Flex";
+import Container from "../../Atom/Container";
 
 export default function CardSilabus() {
   const [open, setOpen] = useState(true);

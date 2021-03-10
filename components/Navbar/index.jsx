@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Button from "../Button";
-import Container from "../Container";
-import Flex from "../Flex";
-import IconButton from "../IconButton";
+import Button from "../Atom/Button";
+import Container from "../Atom/Container";
+import Flex from "../Atom/Flex";
+import IconButton from "../Atom/IconButton";
 
 export default function Index() {
   const [open, setOpen] = useState(false);

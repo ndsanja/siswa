@@ -1,4 +1,4 @@
-import Grid from "../../Grid";
+import Grid from "../../Atom/Grid";
 import CardKelas from "./CardKelas";
 import HeaderKelas from "./HeaderKelas";
 

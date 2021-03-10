@@ -7,14 +7,14 @@ import ListItemsSiswaKelas from "../../../../components/Sekolah/Kelas/ListItemsS
 export default function Siswa() {
   const [openTab, setOpenTab] = useState("siswa");
 
-  const handleSiswa = () => {
+  const handleOpen = () => {
     setOpenTab("siswa");
   };
 
   return (
     <div className="bg-white">
       <MainContent>
-        <HeaderDetail handleSiswa={handleSiswa} openTab={openTab} />
+        <HeaderDetail handleOpen={handleOpen} openTab={openTab} />
         <ListSiswa>
           <ListItemsSiswaKelas
             nama="Nila Dwi Sanja"

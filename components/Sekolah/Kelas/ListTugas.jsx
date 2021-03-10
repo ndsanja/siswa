@@ -1,7 +1,7 @@
-import Container from "../../Container";
-import Card from "../../Card";
-import Flex from "../../Flex";
-import Grid from "../../Grid";
+import Container from "../../Atom/Container";
+import Card from "../../Atom/Card";
+import Flex from "../../Atom/Flex";
+import Grid from "../../Atom/Grid";
 
 export default function ListTugasKelas(props) {
   return (

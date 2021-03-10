@@ -1,6 +1,6 @@
-import Card from "../components/Card";
+import Card from "../components/Atom/Card";
+import Grid from "../components/Atom/Grid";
 import MainContent from "../components/MainContent";
-import Grid from "../components/Grid";
 
 export default function index() {
   return (

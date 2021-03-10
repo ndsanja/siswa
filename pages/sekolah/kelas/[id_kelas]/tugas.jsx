@@ -7,14 +7,13 @@ import ListItemsTugasKelas from "../../../../components/Sekolah/Kelas/ListItemsT
 export default function Tugas() {
   const [openTab, setOpenTab] = useState("tugas");
 
-  const handleTugas = () => {
+  const handleOpen = () => {
     setOpenTab("tugas");
   };
-
   return (
     <div className="bg-white">
       <MainContent>
-        <HeaderDetail handleTugas={handleTugas} openTab={openTab} />
+        <HeaderDetail handleOpen={handleOpen} openTab={openTab} />
         <ListTugasKelas>
           <ListItemsTugasKelas
             nama="Integral Pengantar"

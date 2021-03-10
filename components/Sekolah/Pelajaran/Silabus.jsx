@@ -1,4 +1,4 @@
-import TabPanel from "../../TabPanel";
+import TabPanel from "../../Atom/TabPanel";
 import CardSilabus from "../Pelajaran/CardSilabus";
 
 export default function Silabus(props) {

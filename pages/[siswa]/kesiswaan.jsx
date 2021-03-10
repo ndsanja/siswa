@@ -3,11 +3,11 @@ import HeaderProfile from "../../components/Users/HeaderProfile";
 import Profile from "../../components/Users/Profile";
 import { useState } from "react";
 
-export default function profile() {
-  const [open, setOpen] = useState("profile");
+export default function kesiswaan() {
+  const [open, setOpen] = useState("kesiswaan");
 
   const toogleOpen = () => {
-    setOpen("profile");
+    setOpen("kesiswaan");
   };
   return (
     <div className="bg-white">

@@ -1,11 +1,9 @@
-import Card from "../Card";
-import Grid from "../Grid";
-import HeaderProfile from "./HeaderProfile";
+import Card from "../Atom/Card";
+import Grid from "../Atom/Grid";
 
 export default function Profile() {
   return (
     <div>
-      <HeaderProfile />
       <div className="h-8"></div>
       <Grid className="grid-cols-12 gap-6">
         <div className="col-span-4">

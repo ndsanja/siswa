@@ -5,14 +5,14 @@ import { useState } from "react";
 export default function Dashboard() {
   const [openTab, setOpenTab] = useState("dashboard");
 
-  const handleDashboard = () => {
+  const handleOpen = () => {
     setOpenTab("dashboard");
   };
 
   return (
     <div className="bg-white">
       <MainContent>
-        <HeaderDetail handleDashboard={handleDashboard} openTab={openTab} />
+        <HeaderDetail handleOpen={handleOpen} openTab={openTab} />
       </MainContent>
     </div>
   );

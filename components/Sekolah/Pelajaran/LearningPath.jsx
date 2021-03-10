@@ -1,5 +1,5 @@
-import Grid from "../../Grid";
-import TabPanel from "../../TabPanel";
+import Grid from "../../Atom/Grid";
+import TabPanel from "../../Atom/TabPanel";
 import CardLearningPath from "./CardLearningPath";
 import CardPelajaran from "./CardPelajaran";
 

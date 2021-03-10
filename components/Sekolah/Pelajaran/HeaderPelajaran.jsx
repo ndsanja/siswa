@@ -1,9 +1,9 @@
-import Breadcrumbs from "../../Breadcrumbs";
-import Flex from "../../Flex";
+import Breadcrumbs from "../../Atom/Breadcrumbs";
+import Flex from "../../Atom/Flex";
+import Tab from "../../Atom/Tab";
+import Tabs from "../../Atom/Tabs";
+import Button from "../../Atom/Button";
 import Link from "next/link";
-import Tab from "../../Tab";
-import Tabs from "../../Tabs";
-import Button from "../../Button";
 
 export default function HeaderPejaran(props) {
   return (
@@ -91,7 +91,7 @@ export default function HeaderPejaran(props) {
           <Link href="https://sekolah-gamma.vercel.app/kursus">
             <a>
               <Button className="rounded-xl text-info-main border-2 border-info-main px-3 py-2 font-semibold">
-                Tambah Path
+                Explore Path
               </Button>
             </a>
           </Link>

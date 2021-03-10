@@ -7,14 +7,14 @@ import ListItemsGuruKelas from "../../../../components/Sekolah/Kelas/ListItemsGu
 export default function Guru() {
   const [openTab, setOpenTab] = useState("guru");
 
-  const handleGuru = () => {
+  const handleOpen = () => {
     setOpenTab("guru");
   };
 
   return (
     <div className="bg-white">
       <MainContent>
-        <HeaderDetail handleGuru={handleGuru} openTab={openTab} />
+        <HeaderDetail handleOpen={handleOpen} openTab={openTab} />
         <ListGuruKelas>
           <ListItemsGuruKelas
             nama="Nadiem Makarim"

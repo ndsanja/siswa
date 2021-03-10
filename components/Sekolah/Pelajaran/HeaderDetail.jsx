@@ -1,13 +1,15 @@
-import Breadcrumbs from "../../Breadcrumbs";
-import Card from "../../Card";
-import Flex from "../../Flex";
+import Breadcrumbs from "../../Atom/Breadcrumbs";
+import Card from "../../Atom/Card";
+import Flex from "../../Atom/Flex";
+import Grid from "../../Atom/Grid";
+import Avatar from "../../Atom//Avatar";
+import Tab from "../../Atom/Tab";
+import Tabs from "../../Atom//Tabs";
 import Link from "next/link";
-import Grid from "../../Grid";
-import Avatar from "../../Avatar";
-import Tab from "../../Tab";
-import Tabs from "../../Tabs";
 
 export default function HeaderDetail(props) {
+  const menu = ["Timeline", "Silabus", "Latihan", "Deskripsi"];
+
   return (
     <>
       <Flex className="flex-col space-y-4">
@@ -79,37 +81,29 @@ export default function HeaderDetail(props) {
             </Flex>
           </Flex>
           <Tabs className="flex-row items-center justify-end space-x-12 absolute bottom-0 right-0 z-10 px-6 leading-10 font-semibold text-textColor-secondary-light">
-            <Tab
-              onClick={props.openTimeline}
-              className={`${
-                props.openTab == "timeline"
-                  ? `border-b-2 border-primary-main text-textColor-primary-light`
-                  : ``
-              }`}
-            >
-              Timeline
-            </Tab>
-            <Tab
-              onClick={props.openSilabus}
-              className={`${
-                props.openTab == "silabus"
-                  ? `border-b-2 border-primary-main text-textColor-primary-light`
-                  : ``
-              }`}
-            >
-              Silabus
-            </Tab>
-            <Tab
-              onClick={props.openLatihan}
-              className={`${
-                props.openTab == "latihan"
-                  ? `border-b-2 border-primary-main text-textColor-primary-light`
-                  : ``
-              }`}
-            >
-              Latihan
-            </Tab>
-            <Tab>Deskripsi</Tab>
+            {menu.map((item) => (
+              <Link
+                key={item}
+                href={
+                  item == "Timeline"
+                    ? "/sekolah/pelajaran/1"
+                    : `/sekolah/pelajaran/1/${item.toLowerCase()}`
+                }
+              >
+                <a>
+                  <Tab
+                    onClick={props.toogleOpenTab}
+                    className={`${
+                      props.openTab == item.toLowerCase()
+                        ? `border-b-2 border-primary-main text-textColor-primary-light`
+                        : ``
+                    }`}
+                  >
+                    {item}
+                  </Tab>
+                </a>
+              </Link>
+            ))}
           </Tabs>
           <div className="bg-white absolute bottom-0 w-full h-12"></div>
         </Card>

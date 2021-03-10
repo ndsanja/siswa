@@ -1,8 +1,8 @@
-import TabPanel from "../../TabPanel";
+import Card from "../../Atom/Card";
+import TabPanel from "../../Atom/TabPanel";
+import Flex from "../../Atom/Flex";
 import ListLatihan from "./ListLatihan";
 import ListItemsLatihan from "./ListItemsLatihan";
-import Card from "../../Card";
-import Flex from "../../Flex";
 
 export default function Silabus(props) {
   return (

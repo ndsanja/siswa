@@ -1,4 +1,4 @@
-import Container from "../Container";
+import Container from "../Atom/Container";
 
 export default function Index(props) {
   return (

@@ -5,14 +5,13 @@ import { useState } from "react";
 export default function Jadwal() {
   const [openTab, setOpenTab] = useState("jadwal");
 
-  const handleJadwal = () => {
+  const handleOpen = () => {
     setOpenTab("jadwal");
   };
-
   return (
     <div className="bg-white">
       <MainContent>
-        <HeaderDetail handleJadwal={handleJadwal} openTab={openTab} />
+        <HeaderDetail handleOpen={handleOpen} openTab={openTab} />
       </MainContent>
     </div>
   );

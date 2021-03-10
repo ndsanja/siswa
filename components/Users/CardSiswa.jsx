@@ -1,8 +1,8 @@
-import Card from "../Card";
-import Container from "../Container";
-import Flex from "../Flex";
-import IconButton from "../IconButton";
-import Avatar from "../Avatar";
+import Card from "../Atom/Card";
+import Container from "../Atom/Container";
+import Flex from "../Atom/Flex";
+import IconButton from "../Atom/IconButton";
+import Avatar from "../Atom/Avatar";
 
 export default function CardSiswa() {
   return (

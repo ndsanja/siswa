@@ -1,6 +1,6 @@
-import Flex from "../../Flex";
-import Grid from "../../Grid";
-import Avatar from "../../Avatar";
+import Flex from "../../Atom/Flex";
+import Grid from "../../Atom/Grid";
+import Avatar from "../../Atom/Avatar";
 
 export default function ListItemsTugasKelas(props) {
   return (

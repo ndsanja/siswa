@@ -1,6 +1,6 @@
 import MainContent from "../../components/MainContent";
 import CardSiswa from "../../components/Users/CardSiswa";
-import Grid from "../../components/Grid";
+import Grid from "../../components/Atom/Grid";
 
 export default function siswa() {
   return (

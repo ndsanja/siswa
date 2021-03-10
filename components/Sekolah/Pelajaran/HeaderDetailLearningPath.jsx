@@ -1,11 +1,11 @@
-import Breadcrumbs from "../../Breadcrumbs";
-import Card from "../../Card";
-import Flex from "../../Flex";
+import Breadcrumbs from "../../Atom/Breadcrumbs";
+import Card from "../../Atom/Card";
+import Flex from "../../Atom/Flex";
+import Grid from "../../Atom/Grid";
+import Avatar from "../../Atom/Avatar";
+import Tab from "../../Atom/Tab";
+import Tabs from "../../Atom/Tabs";
 import Link from "next/link";
-import Grid from "../../Grid";
-import Avatar from "../../Avatar";
-import Tab from "../../Tab";
-import Tabs from "../../Tabs";
 
 export default function HeaderDetailLearningPath(props) {
   return (

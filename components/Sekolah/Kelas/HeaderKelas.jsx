@@ -1,8 +1,8 @@
-import Breadcrumbs from "../../Breadcrumbs";
-import Flex from "../../Flex";
+import Breadcrumbs from "../../Atom/Breadcrumbs";
+import Flex from "../../Atom/Flex";
 import Link from "next/link";
-import Tab from "../../Tab";
-import Tabs from "../../Tabs";
+import Tab from "../../Atom/Tab";
+import Tabs from "../../Atom/Tabs";
 
 export default function HeaderKelas() {
   return (

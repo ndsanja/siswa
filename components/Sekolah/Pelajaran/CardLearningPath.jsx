@@ -1,9 +1,9 @@
-import Card from "../../Card";
-import Container from "../../Container";
-import Avatar from "../../Avatar";
-import Flex from "../../Flex";
+import Card from "../../Atom/Card";
+import Container from "../../Atom/Container";
+import Avatar from "../../Atom/Avatar";
+import Flex from "../../Atom/Flex";
+import Grid from "../../Atom/Grid";
 import Link from "next/link";
-import Grid from "../../Grid";
 
 export default function CardLearningPath() {
   return (

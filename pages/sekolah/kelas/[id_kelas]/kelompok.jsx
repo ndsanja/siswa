@@ -5,14 +5,14 @@ import { useState } from "react";
 export default function Kelompok() {
   const [openTab, setOpenTab] = useState("kelompok");
 
-  const handleKelompok = () => {
+  const handleOpen = () => {
     setOpenTab("kelompok");
   };
 
   return (
     <div className="bg-white">
       <MainContent>
-        <HeaderDetail handleKelompok={handleKelompok} openTab={openTab} />
+        <HeaderDetail handleOpen={handleOpen} openTab={openTab} />
       </MainContent>
     </div>
   );

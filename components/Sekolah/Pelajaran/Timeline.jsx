@@ -1,4 +1,4 @@
-import TabPanel from "../../TabPanel";
+import TabPanel from "../../Atom/TabPanel";
 import CardTimeline from "./CardTimeline";
 
 export default function Timeline(props) {

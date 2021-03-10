@@ -1,6 +1,6 @@
-import Avatar from "../Avatar";
-import Flex from "../Flex";
-import Container from "../Container";
+import Avatar from "../Atom/Avatar";
+import Flex from "../Atom/Flex";
+import Container from "../Atom/Container";
 import Link from "next/link";
 
 export default function Index() {

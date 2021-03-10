@@ -1,7 +1,7 @@
-import Flex from "../../Flex";
-import IconButton from "../../IconButton";
-import Grid from "../../Grid";
-import Avatar from "../../Avatar";
+import Flex from "../../Atom/Flex";
+import IconButton from "../../Atom/IconButton";
+import Grid from "../../Atom/Grid";
+import Avatar from "../../Atom/Avatar";
 
 export default function ListItemsSiswaKelas(props) {
   return (

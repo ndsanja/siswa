@@ -5,14 +5,13 @@ import { useState } from "react";
 export default function Info() {
   const [openTab, setOpenTab] = useState("info");
 
-  const handleInfo = () => {
+  const handleOpen = () => {
     setOpenTab("info");
   };
-
   return (
     <div className="bg-white">
       <MainContent>
-        <HeaderDetail handleInfo={handleInfo} openTab={openTab} />
+        <HeaderDetail handleOpen={handleOpen} openTab={openTab} />
       </MainContent>
     </div>
   );

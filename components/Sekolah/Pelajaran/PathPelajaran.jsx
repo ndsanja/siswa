@@ -1,4 +1,4 @@
-import TabPanel from "../../TabPanel";
+import TabPanel from "../../Atom/TabPanel";
 import CardPathPelajaran from "./CardPathPelajaran";
 
 export default function PathPelajaran(props) {

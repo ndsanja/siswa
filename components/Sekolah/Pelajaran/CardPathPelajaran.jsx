@@ -1,4 +1,4 @@
-import Grid from "../../Grid";
+import Grid from "../../Atom/Grid";
 import CardPelajaran from "../Pelajaran/CardPelajaran";
 
 export default function CardPathPelajaran() {

@@ -1,8 +1,8 @@
-import Card from "../../Card";
-import Container from "../../Container";
-import Flex from "../../Flex";
+import Card from "../../Atom/Card";
+import Container from "../../Atom/Container";
+import Flex from "../../Atom/Flex";
 import Link from "next/link";
-import IconButton from "../../IconButton";
+import IconButton from "../../Atom/IconButton";
 
 export default function CardPelajaran() {
   return (
