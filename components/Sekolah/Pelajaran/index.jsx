@@ -24,7 +24,7 @@ export default function Index(props) {
       <div className="h-8"></div>
       <Grid className={`grid-cols-12 gap-6`}>
         {namaPelajaran.map((nama) => (
-          <CardPelajaran key={name} namaPelajaran={nama} />
+          <CardPelajaran key={nama} namaPelajaran={nama} />
         ))}
       </Grid>
     </TabPanel>
