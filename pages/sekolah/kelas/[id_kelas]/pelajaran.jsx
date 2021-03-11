@@ -32,7 +32,7 @@ export default function Dashboard() {
         <HeaderDetail handleOpen={handleOpen} openTab={openTab} />
         <Grid className="grid-cols-12 gap-6">
           {namaPelajaran.map((nama) => (
-            <CardPelajaran key={name} namaPelajaran={nama} />
+            <CardPelajaran key={nama} namaPelajaran={nama} />
           ))}
         </Grid>
       </MainContent>
