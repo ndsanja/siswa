@@ -4,7 +4,7 @@ import Flex from "../../Atom/Flex";
 import Link from "next/link";
 import IconButton from "../../Atom/IconButton";
 
-export default function CardPelajaran() {
+export default function CardPelajaran(props) {
   return (
     <Card className="col-span-4 bg-white shadow-z12-light-shadow rounded-xl overflow-hidden">
       <Link href="/sekolah/pelajaran/1">
@@ -17,7 +17,7 @@ export default function CardPelajaran() {
               <h4 className="text-textColor-secondary-light">Ilmu Sosial</h4>
 
               <h1 className="text-textColor-primary-light text-xl">
-                Sosiologi
+                {props.namaPelajaran}
               </h1>
               <p className="text-textColor-secondary-light">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod

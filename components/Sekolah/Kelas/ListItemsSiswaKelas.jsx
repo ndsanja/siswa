@@ -13,7 +13,7 @@ export default function ListItemsSiswaKelas(props) {
         <Avatar className="h-10 w-10 bg-info-main rounded-full">
           <img src="" alt="" />
         </Avatar>
-        <h2>{props.nama}</h2>
+        <h2 className="cursor-pointer hover:underline">{props.nama}</h2>
       </Flex>
       <h2 className="col-span-2">{props.kelas}</h2>
       <h2 className="col-span-2">{props.nis}</h2>

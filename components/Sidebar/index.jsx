@@ -4,6 +4,15 @@ import Container from "../Atom/Container";
 import Link from "next/link";
 
 export default function Index() {
+  const menuSiswa = ["Profil", "Akun", "Kalender", "Catatan"];
+  const menuSekolah = [
+    "Kelas",
+    "Pelajaran",
+    "Laboratorium",
+    "Ekstrakulikuler",
+    "Perpustakaan",
+  ];
+  const menuBlog = ["Post Baru", "Daftar Post", "Media"];
   return (
     <div className="w-1/4 border-r border-grey-400 fixed overflow-y-auto top-0 left-0 h-screen z-30 bg-white">
       <Container className="px-10 py-24">
@@ -21,64 +30,49 @@ export default function Index() {
           </div>
         </Flex>
         <div className="h-4" />
-        {/* <Flex className="flex-col space-y-4 text-textColor-secondary-light font-semibold">
-          <div>Dashboard</div>
-          <Flex className="flex-col">
-            <ul className="list-disc list-inside space-y-3">
-              <Link href="/">
-                <a>
-                  <li>Dashboard</li>
-                </a>
-              </Link>
-              <li>Analisa</li>
-            </ul>
-          </Flex>
-        </Flex> */}
-        <div className="h-10"></div>
+
+        <div className="h-10" />
         <Flex className="flex-col space-y-4 text-textColor-secondary-light font-semibold">
           <div>Siswa</div>
           <Flex className="flex-col">
             <ul className="list-disc list-inside space-y-3">
-              <Link href="/profile">
-                <a>
-                  <li>Profil</li>
-                </a>
-              </Link>
-              <li>Akun</li>
-              <li>Kalender</li>
-              <li>Catatan</li>
+              {menuSiswa.map((menu) => (
+                <Link key={menu} href={`/${menu.toLowerCase()}`}>
+                  <a>
+                    <li>{menu}</li>
+                  </a>
+                </Link>
+              ))}
             </ul>
           </Flex>
         </Flex>
-        <div className="h-10"></div>
+        <div className="h-10" />
         <Flex className="flex-col space-y-4 text-textColor-secondary-light font-semibold">
           <div>Sekolah</div>
           <Flex className="flex-col">
             <ul className="list-disc list-inside space-y-3">
-              <li>
-                <Link href="/sekolah/kelas">
-                  <a>Kelas</a>
+              {menuSekolah.map((menu) => (
+                <Link key={menu} href={`/sekolah/${menu.toLowerCase()}`}>
+                  <a>
+                    <li>{menu}</li>
+                  </a>
                 </Link>
-              </li>
-              <li>
-                <Link href="/sekolah/pelajaran">
-                  <a>Pelajaran</a>
-                </Link>
-              </li>
-              <li>Laboratorium</li>
-              <li>Ekstrakurikuler</li>
-              <li>Perpustakaan</li>
+              ))}
             </ul>
           </Flex>
         </Flex>
-        <div className="h-10"></div>
+        <div className="h-10" />
         <Flex className="flex-col space-y-4 text-textColor-secondary-light font-semibold">
           <div>Blog</div>
           <Flex className="flex-col">
             <ul className="list-disc list-inside space-y-3">
-              <li>Membuat Post</li>
-              <li>Daftar Post</li>
-              <li>Media</li>
+              {menuBlog.map((menu) => (
+                <Link key={menu} href={`/blog/${menu.toLowerCase()}`}>
+                  <a>
+                    <li>{menu}</li>
+                  </a>
+                </Link>
+              ))}
             </ul>
           </Flex>
         </Flex>

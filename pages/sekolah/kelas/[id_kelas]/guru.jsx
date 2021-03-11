@@ -5,6 +5,23 @@ import ListGuruKelas from "../../../../components/Sekolah/Kelas/ListGuruKelas";
 import ListItemsGuruKelas from "../../../../components/Sekolah/Kelas/ListItemsGuruKelas";
 
 export default function Guru() {
+  const namaGuru = [
+    "Joko Widodo",
+    "Prabowo Subianto",
+    "Jusuf Kalla",
+    "Luhut Binsar Pandjaitan",
+    "Susilo Bambang Yudhoyono",
+    "Sandiaga Uno",
+    "Anies Baswedan",
+    "Mardigu Wowiek",
+    "Gita Wirjawan",
+    "Nadiem Makariem",
+    "Emha Ainun Nadjib",
+    "Din Syamsudin",
+    "Sudjiwo Tedjo",
+    "Butet Kertaradjasa",
+    "Rocky Gerung",
+  ];
   const [openTab, setOpenTab] = useState("guru");
 
   const handleOpen = () => {
@@ -16,90 +33,16 @@ export default function Guru() {
       <MainContent>
         <HeaderDetail handleOpen={handleOpen} openTab={openTab} />
         <ListGuruKelas>
-          <ListItemsGuruKelas
-            nama="Nadiem Makarim"
-            mapel="Matematika"
-            nip="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsGuruKelas
-            nama="Nadiem Makarim"
-            mapel="Matematika"
-            nip="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsGuruKelas
-            nama="Nadiem Makarim"
-            mapel="Matematika"
-            nip="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsGuruKelas
-            nama="Nadiem Makarim"
-            mapel="Matematika"
-            nip="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsGuruKelas
-            nama="Nadiem Makarim"
-            mapel="Matematika"
-            nip="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsGuruKelas
-            nama="Nadiem Makarim"
-            mapel="Matematika"
-            nip="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsGuruKelas
-            nama="Nadiem Makarim"
-            mapel="Matematika"
-            nip="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsGuruKelas
-            nama="Nadiem Makarim"
-            mapel="Matematika"
-            nip="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsGuruKelas
-            nama="Nadiem Makarim"
-            mapel="Matematika"
-            nip="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsGuruKelas
-            nama="Nadiem Makarim"
-            mapel="Matematika"
-            nip="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsGuruKelas
-            nama="Nadiem Makarim"
-            mapel="Matematika"
-            nip="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsGuruKelas
-            nama="Nadiem Makarim"
-            mapel="Matematika"
-            nip="123456"
-            status="Active"
-            deskripsi="verified"
-          />
+          {namaGuru.map((nama) => (
+            <ListItemsGuruKelas
+              key={nama}
+              nama={nama}
+              mapel="Matematika"
+              nip="123456"
+              status="Active"
+              deskripsi="verified"
+            />
+          ))}
         </ListGuruKelas>
       </MainContent>
     </div>

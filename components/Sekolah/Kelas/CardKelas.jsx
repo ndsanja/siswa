@@ -4,7 +4,7 @@ import Flex from "../../Atom/Flex";
 import IconButton from "../../Atom/IconButton";
 import Link from "next/link";
 
-export default function CardKelas() {
+export default function CardKelas(props) {
   return (
     <Card className="col-span-4 bg-white shadow-z12-light-shadow rounded-xl overflow-hidden">
       <Link href="/sekolah/kelas/1">
@@ -14,7 +14,7 @@ export default function CardKelas() {
           </div>
           <Container className="px-4">
             <Flex className="flex-col py-4 space-y-2 items-center justify-center font-semibold text-textColor-primary-light text-sm">
-              <h1 className="text-center">Nama Kelas</h1>
+              <h1 className="text-center">{props.namaKelas}</h1>
               <p className="text-center text-textColor-secondary-light">
                 Deskripsi Kelas
               </p>

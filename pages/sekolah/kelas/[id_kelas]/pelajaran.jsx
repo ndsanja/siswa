@@ -5,6 +5,21 @@ import CardPelajaran from "../../../../components/Sekolah/Pelajaran/CardPelajara
 import { useState } from "react";
 
 export default function Dashboard() {
+  const namaPelajaran = [
+    "Matematika",
+    "Sosiologi",
+    "Kimia",
+    "Ekonomi",
+    "Sejarah",
+    "Pkn",
+    "Biologi",
+    "Fisika",
+    "Bahasa Indonesia",
+    "Bahasa Inggris",
+    "Agama",
+    "BK",
+  ];
+
   const [openTab, setOpenTab] = useState("pelajaran");
 
   const handleOpen = () => {
@@ -16,20 +31,9 @@ export default function Dashboard() {
       <MainContent>
         <HeaderDetail handleOpen={handleOpen} openTab={openTab} />
         <Grid className="grid-cols-12 gap-6">
-          <CardPelajaran />
-          <CardPelajaran />
-          <CardPelajaran />
-          <CardPelajaran />
-          <CardPelajaran />
-          <CardPelajaran />
-          <CardPelajaran />
-          <CardPelajaran />
-          <CardPelajaran />
-          <CardPelajaran />
-          <CardPelajaran />
-          <CardPelajaran />
-          <CardPelajaran />
-          <CardPelajaran />
+          {namaPelajaran.map((nama) => (
+            <CardPelajaran key={name} namaPelajaran={nama} />
+          ))}
         </Grid>
       </MainContent>
     </div>

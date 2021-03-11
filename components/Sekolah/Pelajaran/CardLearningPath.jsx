@@ -5,7 +5,7 @@ import Flex from "../../Atom/Flex";
 import Grid from "../../Atom/Grid";
 import Link from "next/link";
 
-export default function CardLearningPath() {
+export default function CardLearningPath(props) {
   return (
     <Card className="col-span-4 bg-white shadow-z12-light-shadow rounded-xl overflow-hidden">
       <Link href="/sekolah/learning-path/1">
@@ -22,7 +22,7 @@ export default function CardLearningPath() {
             <Container className="px-4 h-72">
               <Flex className="flex-col py-24 space-y-8 font-semibold text-textColor-primary-dark text-sm">
                 <h1 className="text-textColor-primary-dark text-xl">
-                  UTBK Ilmu Pengetahuan Sosial
+                  {props.nama}
                 </h1>
                 <Grid className="font-medium text-xs grid-cols-3 gap-2">
                   <span className="px-4 py-2 rounded-full border border-white text-center">

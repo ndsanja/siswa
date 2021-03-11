@@ -5,6 +5,19 @@ import ListSiswa from "../../../../components/Sekolah/Kelas/ListSiswaKelas";
 import ListItemsSiswaKelas from "../../../../components/Sekolah/Kelas/ListItemsSiswaKelas";
 
 export default function Siswa() {
+  const namaSiswa = [
+    "Nila Dwi Sanja",
+    "Raditya Dika",
+    "Babe Cabita",
+    "Dodit Mulyanto",
+    "Kim Jisso",
+    "Lalisa Manoban",
+    "Kim Jennie",
+    "Rose Rosie",
+    "Fiki Naki",
+    "Kaesang Pangarep",
+    "Nissa Sabyan",
+  ];
   const [openTab, setOpenTab] = useState("siswa");
 
   const handleOpen = () => {
@@ -16,272 +29,16 @@ export default function Siswa() {
       <MainContent>
         <HeaderDetail handleOpen={handleOpen} openTab={openTab} />
         <ListSiswa>
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
-          <ListItemsSiswaKelas
-            nama="Nila Dwi Sanja"
-            kelas="XII-IPS 3"
-            nis="123456"
-            status="Active"
-            deskripsi="verified"
-          />
+          {namaSiswa.map((nama) => (
+            <ListItemsSiswaKelas
+              key={nama}
+              nama={nama}
+              kelas="XII-IPS 3"
+              nis="123456"
+              status="Active"
+              deskripsi="verified"
+            />
+          ))}
         </ListSiswa>
       </MainContent>
     </div>
