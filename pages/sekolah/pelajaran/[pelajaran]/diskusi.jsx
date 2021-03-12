@@ -1,5 +1,9 @@
 import HeaderDetail from "../../../../components/Sekolah/Pelajaran/HeaderDetail";
+import DiskusiUmum from "../../../../components/Sekolah/Pelajaran/DiskusiUmum";
+import DiskusiKelas from "../../../../components/Sekolah/Pelajaran/DiskusiKelas";
+import DiskusiKelompok from "../../../../components/Sekolah/Pelajaran/DiskusiKelompok";
 import MainContent from "../../../../components/MainContent";
+import TabPanel from "../../../../components/Atom/TabPanel";
 
 import { useState } from "react";
 import DiskusiTab from "../../../../components/Sekolah/Pelajaran/DiskusiTab";
@@ -24,6 +28,11 @@ export default function timeline() {
           setOpenTabMenu={setOpenTabMenu}
           menu={menu}
         />
+        <TabPanel>
+          {openTabMenu == "Diskusi Kelompok" && <DiskusiKelompok />}
+          {openTabMenu == "Diskusi Kelas" && <DiskusiKelas />}
+          {openTabMenu == "Diskusi Umum" && <DiskusiUmum />}
+        </TabPanel>
       </MainContent>
     </div>
   );

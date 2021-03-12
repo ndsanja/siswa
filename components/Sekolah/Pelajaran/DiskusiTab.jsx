@@ -3,7 +3,7 @@ import Tab from "../../Atom/Tab";
 
 export default function DiskusiTab(props) {
   return (
-    <Grid className="grid-cols-12 rounded-lg shadow-z12-light-shadow overflow-hidden">
+    <Grid className="grid-cols-12 border-b">
       {props.menu.map((item) => (
         <Tab
           onClick={() => props.setOpenTabMenu(item)}

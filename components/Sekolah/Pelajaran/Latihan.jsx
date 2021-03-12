@@ -22,10 +22,10 @@ export default function Silabus(props) {
     <TabPanel
       className={`${props.openTab == "latihan" ? `flex` : `hidden`} flex-col`}
     >
-      <Card className="rounded-xl shadow-z12-light-shadow p-8 mb-8">
+      <Card className="rounded-xl shadow-info-light-shadow text-info-main border border-info-main p-8 mb-8">
         <Flex className="flex-row items-center space-x-4">
-          <div className="w-24 h-32 bg-primary-main"></div>
-          <h1 className="text-textColor-secondary-light font-semibold">
+          <div className="w-24 h-32 bg-info-main"></div>
+          <h1 className="font-semibold">
             There are 12 assignments coming up. Be sure to submit them before
             the deadline.
           </h1>
