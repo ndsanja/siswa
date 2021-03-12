@@ -5,33 +5,89 @@ import Button from "../../Atom/Button";
 import Avatar from "../../Atom/Avatar";
 
 export default function Profile() {
+  const avatar = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+  ];
+
   return (
     <div>
       <div className="h-8"></div>
       <Grid className="grid-cols-12 gap-6">
         <div className="col-span-4">
           <Grid className="gap-6">
-            <Card className=" bg-white shadow-z12-light-shadow rounded-xl h-28">
-              <Flex className="flex-row divide-x justify-center items-center h-full w-full text-center font-semibold">
-                <div className="px-8 py-4 space-y-1">
-                  <h1 className="font-bold text-warning-main text-xl">
-                    KURANG
-                  </h1>
-                  <p className="text-sm text-textColor-secondary-light">
-                    performa
-                  </p>
-                </div>
-                <div className="px-8 py-4 space-y-1">
-                  <h1 className="font-bold text-textColor-primary-light text-xl">
-                    3 / 20
-                  </h1>
-                  <p className="text-sm text-textColor-secondary-light">
-                    tugas
-                  </p>
-                </div>
-              </Flex>
+            <Card className=" bg-white font-semibold text-sm  space-y-4 mb-4 leading-relaxed">
+              <div className="relative rounded-xl border text-warning-main border-warning-main p-3 pb-8 space-y-1 shadow-warning-light-shadow">
+                <h1 className="uppercase">Perhatian !!!</h1>
+                <p className="mb-4">
+                  Tugas Prasyarat harus sudah diselesaikan semua untuk dapat
+                  mengikuti Ujian Tengah Semester(UTS)
+                </p>
+                <span className="text-xs font-medium absolute bottom-1 right-2 block italic">
+                  created at 15/3/2021
+                </span>
+              </div>
+              <div className="relative rounded-xl border text-info-main border-info-main p-3 pb-8 space-y-1 shadow-info-light-shadow">
+                <h1 className="uppercase">Info !!</h1>
+                <p>
+                  Ujian Tengah Semester(UTS) akan dilakukan secara daring mulai
+                  tanggal 12 april 2021. info selengkapnya silahkan kunjungi{" "}
+                  <a href="#" className="underline">
+                    TAUTAN INI
+                  </a>
+                </p>
+                <span className="text-xs font-medium absolute bottom-1 right-2 block italic">
+                  updated at 15/3/2021
+                </span>
+              </div>
             </Card>
-            <Card className=" bg-white shadow-z12-light-shadow rounded-xl h-72"></Card>
+            <Card className=" bg-white shadow-z12-light-shadow rounded-xl px-6 py-4">
+              <div className="mb-4">
+                <h1 className="text-textColor-secondary-light font-semibold text-sm">
+                  Members of class
+                </h1>
+              </div>
+              <Grid className="grid-cols-4 gap-4 ">
+                {avatar.map((i) => (
+                  <Avatar
+                    key={i}
+                    className="relative h-10 w-10 rounded-full bg-blue-500 flex items-center justify-center overflow-visible"
+                  >
+                    <h1 className="text-textColor-primary-dark font-semibold text-2xl uppercase">
+                      {i}
+                    </h1>
+                    <img src="" alt="" />
+                    <span className="absolute z-10 bottom-0 right-0 uppercase flex items-center justify-center h-4 w-4 text-xs font-semibold text-textColor-primary-light bg-warning-main rounded-full">
+                      M
+                    </span>
+                  </Avatar>
+                ))}
+              </Grid>
+            </Card>
             <Card className=" bg-white shadow-z12-light-shadow rounded-xl h-72"></Card>
           </Grid>
         </div>
