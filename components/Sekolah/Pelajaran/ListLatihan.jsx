@@ -5,7 +5,7 @@ import Grid from "../../Atom/Grid";
 
 export default function CardLatihan(props) {
   return (
-    <Card className="rounded-xl shadow-z12-light-shadow">
+    <Card className="rounded-xl rounded-t-none shadow-z12-light-shadow">
       <Container className="px-2 w-full">
         <Flex className="flex-col justify-center py-4">
           <Flex className="flex-col justify-center font-semibold text-sm text-textColor-primary-light mt-4">

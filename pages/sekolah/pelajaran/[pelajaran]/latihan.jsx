@@ -7,7 +7,6 @@ import { useState } from "react";
 
 export default function latihan() {
   const [openTab, setOpenTab] = useState("latihan");
-
   const toogleOpenTab = () => {
     setOpenTab("latihan");
   };
@@ -17,6 +16,7 @@ export default function latihan() {
       <MainContent>
         <HeaderDetail toogleOpenTab={toogleOpenTab} openTab={openTab} />
         <div className="h-8"></div>
+
         <Silabus openTab={openTab} />
         <Timeline openTab={openTab} />
         <Latihan openTab={openTab} />

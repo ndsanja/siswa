@@ -8,7 +8,7 @@ import Tabs from "../../Atom//Tabs";
 import Link from "next/link";
 
 export default function HeaderDetail(props) {
-  const menu = ["Timeline", "Silabus", "Latihan", "Deskripsi"];
+  const menu = ["Diskusi", "Timeline", "Silabus", "Latihan", "Deskripsi"];
 
   return (
     <>

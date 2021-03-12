@@ -3,15 +3,26 @@ import TabPanel from "../../Atom/TabPanel";
 import Flex from "../../Atom/Flex";
 import ListLatihan from "./ListLatihan";
 import ListItemsLatihan from "./ListItemsLatihan";
+import LatihanTab from "./LatihanTab";
+import { useState } from "react";
 
 export default function Silabus(props) {
+  const namaTugas = [
+    "Integral Pengantar",
+    "Menulis Surat Tugas",
+    "Kimia Pengantar",
+    "Akuntansi Keuangan",
+    "Praktek Machine Learning",
+  ];
+  const menu = ["Daftar Latihan", "Latihan Terkumpul"];
+
+  const [openTabMenu, setOpenTabMenu] = useState("Daftar Latihan");
+
   return (
     <TabPanel
-      className={`${
-        props.openTab == "latihan" ? `flex` : `hidden`
-      } flex-col space-y-8`}
+      className={`${props.openTab == "latihan" ? `flex` : `hidden`} flex-col`}
     >
-      <Card className="rounded-xl shadow-z12-light-shadow p-8">
+      <Card className="rounded-xl shadow-z12-light-shadow p-8 mb-8">
         <Flex className="flex-row items-center space-x-4">
           <div className="w-24 h-32 bg-primary-main"></div>
           <h1 className="text-textColor-secondary-light font-semibold">
@@ -21,71 +32,43 @@ export default function Silabus(props) {
         </Flex>
       </Card>
 
-      <ListLatihan>
-        <ListItemsLatihan
-          nama="Pelajaran 1"
-          deskripsi="Kuis"
-          status="Terkumpul"
-          deadline="17 Feb"
-          jam="20.00 WIB"
-          bobot="2%"
-          nilai="73 / B-"
-        />
-        <ListItemsLatihan
-          nama="Pelajaran 1"
-          deskripsi="Kuis"
-          status="Terkumpul"
-          deadline="17 Feb"
-          jam="20.00 WIB"
-          bobot="2%"
-          nilai="73 / B-"
-        />
-        <ListItemsLatihan
-          nama="Pelajaran 1"
-          deskripsi="Kuis"
-          status="Terkumpul"
-          deadline="17 Feb"
-          jam="20.00 WIB"
-          bobot="2%"
-          nilai="73 / B-"
-        />
-        <ListItemsLatihan
-          nama="Pelajaran 1"
-          deskripsi="Kuis"
-          status="Terkumpul"
-          deadline="17 Feb"
-          jam="20.00 WIB"
-          bobot="2%"
-          nilai="73 / B-"
-        />
-        <ListItemsLatihan
-          nama="Pelajaran 1"
-          deskripsi="Kuis"
-          status="Terkumpul"
-          deadline="17 Feb"
-          jam="20.00 WIB"
-          bobot="2%"
-          nilai="73 / B-"
-        />
-        <ListItemsLatihan
-          nama="Pelajaran 1"
-          deskripsi="Kuis"
-          status="Terkumpul"
-          deadline="17 Feb"
-          jam="20.00 WIB"
-          bobot="2%"
-          nilai="73 / B-"
-        />
-        <ListItemsLatihan
-          nama="Pelajaran 1"
-          deskripsi="Kuis"
-          status="Terkumpul"
-          deadline="17 Feb"
-          jam="20.00 WIB"
-          bobot="2%"
-          nilai="73 / B-"
-        />
-      </ListLatihan>
+      <LatihanTab
+        openTabMenu={openTabMenu}
+        setOpenTabMenu={setOpenTabMenu}
+        menu={menu}
+      />
+
+      {openTabMenu == "Daftar Latihan" ? (
+        <ListLatihan>
+          {namaTugas.map((nama) => (
+            <ListItemsLatihan
+              key={nama}
+              nama={nama}
+              deskripsi="Kuis"
+              status="Terkumpul"
+              deadline="17 Feb"
+              jam="20.00 WIB"
+              bobot="2%"
+              nilai="73 / B-"
+            />
+          ))}
+        </ListLatihan>
+      ) : (
+        <ListLatihan>
+          {namaTugas.map((nama) => (
+            <ListItemsLatihan
+              key={nama}
+              nama={nama}
+              deskripsi="Kuis"
+              status="Mengulang"
+              deadline="17 Feb"
+              jam="20.00 WIB"
+              bobot="2%"
+              nilai="73 / B-"
+            />
+          ))}
+        </ListLatihan>
+      )}
     </TabPanel>
   );
 }
