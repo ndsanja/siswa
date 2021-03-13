@@ -22,7 +22,7 @@ export default function HeaderProfile(props) {
     <>
       <Flex className="flex-col space-y-4">
         <h1 className="font-semibold text-2xl text-textColor-primary-light">
-          Profile
+          Profil
         </h1>
         <Flex className="flex-row text-textColor-primary-light text-sm space-x-4 font-semibold">
           <Link href="/1234">
